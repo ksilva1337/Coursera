@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"
+	<title>Element with class selector</title>
+	<style>
+	.hgl {background-color: green;}
+	p.hgl {font-style: italic;}
+	.hgl.main {color: red; background-color: black;}
+
+	</style>
+</head>
+<body>
+	<h1 class="hgl">An h1 with hgl class</h1>
+	<p>A p element with no class</p>
+	<p class="hgl">A p element with hgl class</p>
+	<div class="main hgl">A div with class main and hgl</div>
+
+	<h1>Child selector</h1>
+	<section>
+		<h2>subheading 1</h2>
+		<div>
+			<article>article inside div inside section</article>
+		</div>
+	</section>
+	<section>
+		<article>article as direct child of section</article>
+	</section>
+	<h2>subheading 2</h2>
+
+
+</body>
+</html>
