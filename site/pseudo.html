@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	header li {list-style: none;}
+	a:link, a:visited {
+		text-decoration: none;
+		background-color: green;
+		border: 1px solid blue;
+		color: black;
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-bottom: 1px;
+	}
+
+	a:hover, a:active {
+		background-color: red;
+		color: purple;
+	}
+	header li:nth-child(3){
+		font-size: 24px;
+	}
+	section div:nth-child(odd){background-color: gray;}
+	section div:nth-child(4):hover{
+		background-color: green;
+		cursor: pointer;
+	}
+	section:hover div:nth-child(2){font-size: 24px;}
+
+
+	</style>
+</head>
+<body>
+	<h1>Pseudo Class Selector</h1>
+	<header>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="http://www.politico.com" target="_blank">Politico</a></li>
+			<li><a href="http://www.nytimes.com" target="_blank">NY Times</a></li>
+		</ul>
+	</header>
+	<section> 
+		<div>Div 1</div>
+		<div>Div 2</div>
+		<div>Div 3</div>
+		<div>Div 4</div>
+		<div>Div 5</div>
+		<div style="text-align: center;">Div 6</div>
+		<div>Div 7</div>
+	</section>
+
+</body>
+</html>
